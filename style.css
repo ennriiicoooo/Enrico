@@ -645,7 +645,7 @@ color: #ededed;
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: #6DA9E4;
+    color: #f80874;
     flex-direction: column;
     
 }
@@ -654,16 +654,10 @@ color: #ededed;
     color: #ededed;
 }
 
-.contactForm{
-    width: 40%;
-    padding: 40px;
-    background: #6527BE;
-    
-    
-    
-}
 form{
-    background:#ededed;
+    border: 2px solid rgba(222, 7, 214, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -673,8 +667,9 @@ form{
     
 }
 form h3{
-    color: #0D4C92;
+    color: #dd17dd;
     font-weight: 800;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 form input, form textarea{
@@ -682,13 +677,16 @@ form input, form textarea{
     margin: 1px 0;
     padding: 10px;
     outline: none;
-    background: #6527BE;
+    border: 2px solid rgba(222, 7, 214, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     font-size: 16px;
-    color: #ededed;
+    background: transparent;
+    color: #dd17dd;
 }
 form button{
     padding: 15px;
-    background: #6527BE;
+    background: transparent;
     color: white;
     font-size: 18px;
     border: 0;
@@ -705,7 +703,10 @@ button[type=reset]:hover {
     background-color: #6527BE;
     color: #ededed;
 }
-
+button[type=submit]:hover {
+    background-color: #6527BE;
+    color: #ededed;
+}
 @media(max-width: 610px){
     .home-content {
     max-width: 30rem;
@@ -821,18 +822,23 @@ button[type=reset]:hover {
     .contactForm{
         width: 100%;
         padding: 40px;
-        background: #6527BE;
+        background: transparent;
         margin-bottom: -800px;
         display: block;
         margin-left: -120px;
+        border: 2px solid rgba(222, 7, 214, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
         
         
         
         
     }
     form{
-        background:#ededed;
-        
+        background: transparent;
+        border: 2px solid rgba(222, 7, 214, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
         display: block;
         padding: 2vw 4vw;
         width: 100%;
@@ -841,7 +847,7 @@ button[type=reset]:hover {
         
     }
     form h3{
-        color: #0D4C92;
+        color: #dd17dd;
         font-weight: 400;
         margin-bottom: 10px;
     }
@@ -850,13 +856,16 @@ button[type=reset]:hover {
         margin: 1px 0;
         padding: 5px;
         outline: none;
-        background: #6527BE;
+        background: transparent;
+        border: 2px solid rgba(222, 7, 214, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
         font-size: 8px;
-        color: #ededed;
+        color: #dd17dd;
     }
     form button{
         padding: 15px;
-        background: #6527BE;
+        background: transparent;
         color: white;
         font-size: 9px;
         border: 0;
@@ -870,6 +879,10 @@ button[type=reset]:hover {
     
     }
     button[type=reset]:hover {
+        background-color: #6527BE;
+        color: #ededed;
+    }
+    button[type=submit]:hover {
         background-color: #6527BE;
         color: #ededed;
     }
@@ -918,4 +931,17 @@ button[type=reset]:hover {
     .aybi{
         margin-left: 30px;
 }
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #f80874;
+    flex-direction: column;
+    
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #ededed;
+}
+
 }
