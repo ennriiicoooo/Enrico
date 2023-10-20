@@ -589,6 +589,7 @@ color: #ededed;
     font-size: 18px;
     font-weight: 300;
     opacity: 0;
+    padding-top: 3rem;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     
