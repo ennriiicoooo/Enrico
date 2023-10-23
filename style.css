@@ -450,7 +450,6 @@ span {
 .about-content {
     text-align: center;
     
-    
 }
 .about-content h3 {
     font-size: 2.6rem;
@@ -458,7 +457,6 @@ span {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     color: #0dcbd1;
-    
 }
 .about-content p {
     font-size: 1.6rem;
@@ -489,27 +487,14 @@ span {
 
 
 }
-.about .imgHover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
-.about .imgHover:hover {
-    background: #6527BE;
-    opacity: .3;
 
-}
 .aybi{
     margin-left: 60px;
 }
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 15rem;
@@ -546,13 +531,13 @@ span {
     transition: height 0.5s;
 }
 .layer h5{
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #ffdffa;
 }
 .layer p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #ffdffa;
 }
@@ -662,14 +647,14 @@ form{
     border: 2px solid rgba(222, 7, 214, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(64px);
+    box-shadow: 0 0 100px rgba(222, 7, 214, 0.5);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 400px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: transparent;
-    box-shadow: 0 0 30px rgba(222, 7, 214, .5);
     
 }
 form h3{
@@ -683,18 +668,17 @@ form input, form textarea{
     margin: 1px 0;
     padding: 10px;
     outline: none;
-    border: 2px solid rgba(222, 7, 214, 0.1);
+    border: 2px solid rgba(222, 7, 214, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(64px);
     font-size: 16px;
     background: transparent;
     color: #dd17dd;
-    position: relative;
 }
 form button{
     padding: 15px;
     background: transparent;
-    color: #dd17dd;
+    color: white;
     font-size: 18px;
     border: 0;
     outline: none;
@@ -702,20 +686,21 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+    box-shadow: 0 0 30px rgba(222, 7, 214, 0.5);
     backdrop-filter: blur(64px);
-    box-shadow: 0 0 30px rgba(222, 7, 214, .5);
+
+    
     
 
 }
 button[type=reset]:hover {
     background-color: #6527BE;
-    color: #dd17dd;
+    color: #ededed;
 }
 button[type=submit]:hover {
     background-color: #6527BE;
-    color: #dd17dd;
+    color: #ededed;
 }
-
 @media(max-width: 610px){
     .home-content {
     max-width: 30rem;
@@ -835,8 +820,7 @@ button[type=submit]:hover {
         margin-left: -120px;
         border: 2px solid rgba(222, 7, 214, 0.1);
         border-radius: 20px;
-        backdrop-filter: blur(64px);
-        box-shadow: 0 0 30px rgba(222, 7, 214, .5);
+        backdrop-filter: blur(15px);
         
         
         
@@ -846,13 +830,12 @@ button[type=submit]:hover {
         background: transparent;
         border: 2px solid rgba(222, 7, 214, 0.1);
         border-radius: 20px;
-        backdrop-filter: blur(64px);
+        backdrop-filter: blur(15px);
         display: block;
         padding: 2vw 4vw;
         width: 100%;
         max-width: 200px;
         border-radius: 10px;
-        box-shadow: 0 0 30px rgba(222, 7, 214, .5);
         
     }
     form h3{
@@ -889,11 +872,11 @@ button[type=submit]:hover {
     }
     button[type=reset]:hover {
         background-color: #6527BE;
-        color: #dd17dd;
+        color: #ededed;
     }
     button[type=submit]:hover {
         background-color: #6527BE;
-        color: #dd17dd;
+        color: #ededed;
     }
     .about-content {
         text-align: center;
@@ -979,9 +962,9 @@ button[type=submit]:hover {
 
 .about-content {
     text-align: center;
-    margin-left: -200%;
-    margin-right: -20%;
-    
+    margin-left: -70%;
+    margin-right: 50%;
+    margin-bottom: -130%;
 }
 
 .about .imgHover:hover {
@@ -990,10 +973,7 @@ button[type=submit]:hover {
 }
 
 .aybi{
-    margin-left: 150px;
-    margin-top: -200px;
-    
+    margin-left: 0px;
 }
-
 
 }
