@@ -291,6 +291,8 @@ section {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: var(--bg-color);
     
 }
 
@@ -528,7 +530,7 @@ span {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #12486B);
+    background: #12476b96;
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -545,15 +547,15 @@ span {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #7A316F;
+    color: #ffdffa;
 }
 .layer p{
     font-size: 1.5rem;
     line-height: 1.5;
-    color: #7A316F;
+    color: #ffdffa;
 }
 .layer i{
-    color: #7A316F;
+    color: #ffdffa;
     margin-top: 20px;
     font-size: 20px;
     background: var(--second-bg-color);
@@ -940,6 +942,46 @@ button[type=submit]:hover {
 .container .contactinfo .box .text h3{
     font-weight: 500;
     color: #ededed;
+}
+
+}
+
+@media(max-width: 610px){
+  .image{
+    margin-bottom: 500px;
+  }
+  .round{
+    margin-bottom: 500px;
+  }
+
+  .home-content{
+    margin-top: 200px;
+  }
+
+  .about-img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    margin-left: 75%;
+    margin-bottom: 400px;
+}
+
+.about-content {
+    text-align: center;
+    margin-left: -70%;
+    margin-right: 50%;
+    margin-bottom: -130%;
+}
+
+.about .imgHover:hover {
+    background: none;
+
+}
+
+.aybi{
+    margin-left: 0px;
 }
 
 }
