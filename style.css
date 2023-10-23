@@ -450,6 +450,7 @@ span {
 .about-content {
     text-align: center;
     
+    
 }
 .about-content h3 {
     font-size: 2.6rem;
@@ -457,6 +458,7 @@ span {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     color: #0dcbd1;
+    
 }
 .about-content p {
     font-size: 1.6rem;
@@ -507,7 +509,7 @@ span {
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 15rem;
@@ -544,13 +546,13 @@ span {
     transition: height 0.5s;
 }
 .layer h5{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #ffdffa;
 }
 .layer p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: #ffdffa;
 }
@@ -657,15 +659,17 @@ color: #ededed;
 }
 
 form{
-    border: 2px solid rgba(222, 7, 214, 0.1);
+    border: 2px solid rgba(222, 7, 214, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(64px);
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0 0 30px rgba(222, 7, 214, .5);
     
 }
 form h3{
@@ -681,15 +685,16 @@ form input, form textarea{
     outline: none;
     border: 2px solid rgba(222, 7, 214, 0.1);
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(64px);
     font-size: 16px;
     background: transparent;
     color: #dd17dd;
+    position: relative;
 }
 form button{
     padding: 15px;
     background: transparent;
-    color: white;
+    color: #dd17dd;
     font-size: 18px;
     border: 0;
     outline: none;
@@ -697,18 +702,20 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
-    
+    backdrop-filter: blur(64px);
+    box-shadow: 0 0 30px rgba(222, 7, 214, .5);
     
 
 }
 button[type=reset]:hover {
     background-color: #6527BE;
-    color: #ededed;
+    color: #dd17dd;
 }
 button[type=submit]:hover {
     background-color: #6527BE;
-    color: #ededed;
+    color: #dd17dd;
 }
+
 @media(max-width: 610px){
     .home-content {
     max-width: 30rem;
@@ -828,7 +835,8 @@ button[type=submit]:hover {
         margin-left: -120px;
         border: 2px solid rgba(222, 7, 214, 0.1);
         border-radius: 20px;
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(64px);
+        box-shadow: 0 0 30px rgba(222, 7, 214, .5);
         
         
         
@@ -838,12 +846,13 @@ button[type=submit]:hover {
         background: transparent;
         border: 2px solid rgba(222, 7, 214, 0.1);
         border-radius: 20px;
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(64px);
         display: block;
         padding: 2vw 4vw;
         width: 100%;
         max-width: 200px;
         border-radius: 10px;
+        box-shadow: 0 0 30px rgba(222, 7, 214, .5);
         
     }
     form h3{
@@ -880,11 +889,11 @@ button[type=submit]:hover {
     }
     button[type=reset]:hover {
         background-color: #6527BE;
-        color: #ededed;
+        color: #dd17dd;
     }
     button[type=submit]:hover {
         background-color: #6527BE;
-        color: #ededed;
+        color: #dd17dd;
     }
     .about-content {
         text-align: center;
@@ -970,9 +979,9 @@ button[type=submit]:hover {
 
 .about-content {
     text-align: center;
-    margin-left: -70%;
-    margin-right: 50%;
-    margin-bottom: -130%;
+    margin-left: -200%;
+    margin-right: -20%;
+    
 }
 
 .about .imgHover:hover {
@@ -981,7 +990,10 @@ button[type=submit]:hover {
 }
 
 .aybi{
-    margin-left: 0px;
+    margin-left: 150px;
+    margin-top: -200px;
+    
 }
+
 
 }
