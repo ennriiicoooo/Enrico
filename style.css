@@ -655,7 +655,7 @@ form{
     width: 90%;
     max-width: 400px;
     border-radius: 10px;
-    background: transparent;
+    background-color: #4f006eab;
     
 }
 form h3{
@@ -869,7 +869,7 @@ button[type=submit]:hover {
         
     }
     form{
-        background: transparent;
+        background-color: #4f006eab;
         border: 2px solid rgba(222, 7, 214, 0.1);
         border-radius: 20px;
         backdrop-filter: blur(15px);
