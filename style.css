@@ -819,7 +819,7 @@ button[type=submit]:hover {
     }
 }
 .image{
-    right: 110px;
+    right: 150px;
     width: 100px;
 }
 .image img{
@@ -828,7 +828,7 @@ button[type=submit]:hover {
 
 }
 .round{
-    width: 300%;
+    width: 200%;
     height: 50%;
     margin-right: -100px;
     position: absolute;
@@ -838,7 +838,7 @@ button[type=submit]:hover {
     border-width: 4px 4px 0 0;
     animation: RoundAni infinite linear 10s;
     bottom: -220px;
-    right: 140px;
+    right: 180px;
     
 }
 @keyframes RoundAni{
