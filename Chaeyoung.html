@@ -37,8 +37,13 @@
 
         let image = document.getElementById('bulb_img');
 
-         if(image.src.match("bulb")) {
-            image.src = "images/onn.gif";
+         if(image.src.includes("bulb")) {
+
+            //starting bulb
+            setTimeout(() => {
+                image.src = "images/onn.gif";
+            }, 2000)
+            image.src = "images/charge.gif";
          } else {
             image.src = "images/bulb.gif";
          }
