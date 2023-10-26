@@ -494,25 +494,30 @@ span {
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 15rem;
+    margin-top: 2rem;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
+    
+    
 }
 .row{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    
 
 }
 .row img{
     width: 100%;
     border-radius: 8px;
     display: block;
+    border-radius: 50%;
+    
 }
 .layer{
     width: 100%;
