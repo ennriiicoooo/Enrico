@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .bg-bulb{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .bulb{
+        
+        width: 100%;
+        height: 100%;   
+    }
+</style>
+<body>
+   
+    <div class="bg-bulb">
+        <img id="bulb_img" src="images/off.png" onclick="light_change()" class="bulb" alt="">
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    function light_change(){
+
+        let image = document.getElementById('bulb_img');
+
+         if(image.src.includes("images/off.png")) {
+
+            //starting bulb
+            setTimeout(() => {
+                image.src = "images/on.png";
+            }, 2000)
+            image.src = "images/ready.png";
+         } else {
+            image.src = "images/off.png";
+         }
+    }
+</script>
