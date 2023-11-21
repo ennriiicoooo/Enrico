@@ -32,19 +32,23 @@ body{
     background: url(images/diii.gif);
     color: var(--second-bg-color);
     background-size: cover;
+    background-position: center;
 }
 .con{
-    background: url(images/ayyy.gif);
+    background: url(images/ay.gif.crdownload);
     background-size: cover;
+    background-position: center;
 }
 .con2{
-    background: url(images/biii.gif);
+    background: url(images/bb.gif);
     background-size: cover;
+    background-position: center;
     
 }
 .con3{
-    background: url(images/ciii.gif);
+    background: url(images/b.gif);
     background-size: cover;
+    background-position: center;
     
 }
 
@@ -733,7 +737,7 @@ button[type=submit]:hover {
  font-size: 1.5rem;  
  font-weight: 300; 
  color: white;
- -webkit-text-stroke: .1px var(--main-color);
+ -webkit-text-stroke: .7px var(--main-color);
  opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -906,7 +910,6 @@ button[type=submit]:hover {
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
         -webkit-text-stroke: .1px;
-        
     }
     .about-content p {
         font-size: 1rem;
@@ -915,7 +918,6 @@ button[type=submit]:hover {
         animation: slideRight 1s ease forwards;
         animation-delay: 1s;
         -webkit-text-stroke: .1px;
-        
     }
     .btn-box {
         display: inline-block;
@@ -930,7 +932,6 @@ button[type=submit]:hover {
         opacity: 0;
         animation: slideBottom 1s ease forwards;
         animation-delay: 1s;
-        
         
 
     }
