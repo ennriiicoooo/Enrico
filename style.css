@@ -293,6 +293,7 @@ section {
     animation-delay: 1s;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: var(--bg-color);
+    color: rgb(253, 206, 103);
     
 }
 
@@ -319,6 +320,7 @@ section {
  opacity: 0;
     animation: slideSci 1s ease forwards;
     animation-delay: 1s;
+    color: rgb(34, 167, 238);
 }
 .right{
   
@@ -456,7 +458,7 @@ span {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
-    color: #0dcbd1;
+    color: rgb(253, 206, 103);
 }
 .about-content p {
     font-size: 1.6rem;
@@ -464,8 +466,9 @@ span {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
-    color: #0dcbd1;
+    color: rgb(253, 206, 103);
 }
+
 .btn-box {
     display: inline-block;
     padding: 12px 20px;
