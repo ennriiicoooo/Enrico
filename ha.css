@@ -178,6 +178,9 @@
     }
     .about-content {
         text-align: center;
+        margin-left: -70%;
+        margin-right: 50%;
+        margin-bottom: -130%;
         
     }
     .about-content h3 {
@@ -246,7 +249,34 @@
     }
 
 }
+.about-img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    margin-left: 75%;
+    margin-bottom: 400px;
 }
+
+.about-content {
+    text-align: center;
+    margin-left: -70%;
+    margin-right: 50%;
+    margin-bottom: -130%;
+}
+
+.about .imgHover:hover {
+    background: none;
+
+}
+
+.aybi{
+    margin-left: 0px;
+}
+
+}
+
 
 
 

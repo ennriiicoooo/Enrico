@@ -984,9 +984,9 @@ button[type=submit]:hover {
 
 .about-content {
     text-align: center;
-    margin-left: -70%;
+    margin-left: -50%;
     margin-right: 50%;
-    margin-bottom: -130%;
+    margin-bottom: -200%;
 }
 
 .about .imgHover:hover {
