@@ -33,22 +33,26 @@ body{
     color: var(--second-bg-color);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .con{
     background: url(images/ayy.gif);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .con2{
     background: url(images/bb.gif);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     
 }
 .con3{
     background: url(images/b.gif);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     
 }
 
