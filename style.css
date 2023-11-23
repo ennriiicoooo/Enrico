@@ -35,7 +35,7 @@ body{
     background-position: center;
 }
 .con{
-    background: url(images/ay.gif.crdownload);
+    background: url(images/ay.gif);
     background-size: cover;
     background-position: center;
 }
@@ -716,7 +716,6 @@ button[type=submit]:hover {
     background-color: #6527BE;
     color: #ededed;
 }
-
 
 @media(max-width: 610px){
     .home-content {
