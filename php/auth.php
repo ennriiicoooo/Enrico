@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
 
         <script>
             alert("Login Successfully");
-            window.location.href='index.html';
+            window.location.href='home.php';
         </script>
 
         <?php
@@ -41,24 +41,7 @@ else {
 
       
 
-        if(!$result) {die('Unsuccessfull added'. mysql_error()); } 
-
-        
-    }
-} else {
-
-    ?>
-
-    <script>
-        alert("Your username and password is EMPTY");
-        window.location.href='index.php';
-    </script>
-
-    <?php
-
-    if(!$result) {die('Unsuccessfull added'. mysql_error()); } 
-
-    header("location:index.php");
+}
 }
 
 
