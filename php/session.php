@@ -10,9 +10,6 @@ if(isset($_SESSION['username'])){
 
     $row = mysqli_fetch_array($ses_sqli,MYSQLI_ASSOC);
 
-    $uid = $row['user_id'];
-    $fullname = $row['fullname'];
-    $email = $row['email'];
 
     if(!isset($_SESSION['username'])){
         header("Location: index.php");
