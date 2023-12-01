@@ -26,6 +26,7 @@
                     <span class="menu">
                         
                     <li><a href="logout.php" style="--i:1;" class="btn" >LOGOUT </a></li>
+                    <li><a href="user_test.php" style="--i:2;" class="btn" >USER </a></li>
                         
                         
                         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
