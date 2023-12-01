@@ -61,7 +61,7 @@
             <!---<a href=""   data-bs-toggle="modal" data-bs-target="#editModal"><button class="btn btn-primary btn-sm"><i class="fa-solid fa-edit></i></button></a>
                 -->
                 <a href="user_test.php?edit_id=<?php echo $row['user_id']; ?>"><button class="btn btn-primary btn-sm"><i class = "fa-solid fa-edit"></i></button></a>
-                <a href="delete.php?delete_id=<?php echo $row['user_id']; ?>" onclick="return confirm('Are you sure you want to delete? All information');">
+                <a href="delete.php?user_id=<?php echo $row['user_id']; ?>" onclick="return confirm('Are you sure you want to delete? All information');">
                 <button class="btn btn-danger btn-sm"><i class="fa-regular fa-trash-can"></i></button></a>
               </td>
           </tr>
