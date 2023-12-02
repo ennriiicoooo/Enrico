@@ -42,7 +42,8 @@
          <h2><span class="typed-text"></span></h2>
             <p>I'm here to present my Online Personal Portfolio. 
             Enjoy!</p>
-            <p>Welcome <?php echo $fullname; ?>!</p>
+            <p>Welcome <?php echo  $fullname; ?> !</p>
+            
             
         </div>
      <!---Image -->

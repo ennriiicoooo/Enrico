@@ -12,8 +12,11 @@ if(isset($_POST['submit'])){
     $sql = "SELECT * FROM tbl_user WHERE username = '$myusername' and password = '$mypassword' ";
     $result = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($result);
+    $row = mysqli_fetch_array($result);
+    $status = $row['active'];
 
-    if($count > 0){
+
+    if($status == 1){
 
         $_SESSION['username'] = $myusername;
         ?>
