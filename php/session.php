@@ -10,9 +10,11 @@ if(isset($_SESSION['username'])){
 
     $row = mysqli_fetch_array($ses_sqli,MYSQLI_ASSOC);
 
-    $uid = $row['user_id'];
-    $fullname = $row['fullname'];
-    $email = $row['email'];
+
+    $uid = $row ['user_id'];
+    $fullname = $row ['fullname'];
+    
+
 
 
     if(!isset($_SESSION['username'])){

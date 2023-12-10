@@ -3,76 +3,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-
+    <title>Homie</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+<style>
+   .home{
+        background: url(images/hala.gif);
+        background-size: cover;
+    }
 
+</style>
 <body>
-    <!---Header & Logo-->
-    <header class="header">
-        <a href="home.php" class="logo"><img src="images/el.png" alt=""></a>
-        
-        <!---Navigation-->
-            <nav>
-                <ul class='nav-bar'>
-                    <input type='checkbox' id='check'>
-                    <span class="menu">
-                        
-                    <li><a href="logout.php" style="--i:1;" class="btn" >LOGOUT </a></li>
-                    <li><a href="user_test.php" style="--i:2;" class="btn" >USER </a></li>
-                        
-                        
-                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-                </ul>
-            </nav>
-            </header>
-    <!---Home-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hello, I'm Enrico Gonzales</h1>
-         <h2><span class="typed-text"></span></h2>
-            <p>I'm here to present my Online Personal Portfolio. 
-            Enjoy!</p>
-            <p>Welcome <?php echo  $fullname; ?> !</p>
+    <div class="overlay"></div>
+    <header>
+        <a href="home.php" class="logo"><span>E</span>nrico</a>
+        <ul class="navlist">
+            <li><a href="logout.php">Logout</a></li>
+            <li><a href="user_test.php">Users</a></li>
+            <p style="color: white;"> Welcome <?php echo $fullname; ?>! </p>
             
-            
+        </ul>
+        <div class="right-header">
+           
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
         </div>
-     <!---Image -->
+    </header>
+
+    <section class="home">
+        <div class="hero-info">
+            <h3>Welcome To my World</h3>
+            <h1>Hi I'm Enrico</h1>
+
+            <div class="text-animate">
+                <h2>IT STUDENT</h2>
+                
+            </div>
+           
+
+           
+            
+
+           
+        </div>
         <div class="right">
-        <div class="image">
-            <img src="images/idolo.png">
+       
+        <div class="img-hero">
+            <img src="images/e.png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>I'm IT Student, Web Designer, Encoder And  Programmer</p>
+                </div>
+                <span><i></i></span>
+            </div>
+            </div>
         </div>
-        <div class="round">
-        <div class="moon">
-            
-            
-        </div>
-        </div>
-        </div>
-        
     </section>
-     <!---Typed-Text-->
-    
-</body>
-</html>
-<script src="./typed.js-main/dist/typed.umd.js"></script>
-    <script>
-        let typed = new Typed('.typed-text',{
-        strings: ['an IT Student','Programmer','Web Developer'],
-        typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 1000,
-        loop: true,
-    })
-
-</script>
-
+    </body>
+    </html>
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>

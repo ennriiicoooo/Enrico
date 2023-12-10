@@ -1,6 +1,7 @@
 <?php
-include('config.php');
 session_start();
+include('config.php');
+
 
 
 if(isset($_POST['update'])){
@@ -9,7 +10,7 @@ if(isset($_POST['update'])){
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
-    $status = mysqli_real_escape_string($conn,$_POST['status']);
+    $status = isset($_POST['status']) ? mysqli_real_escape_string($conn, $_POST['status']) : '';
     $edit_id = mysqli_real_escape_string($conn,$_POST['edit_id']);
 
     $sql_update = "UPDATE tbl_user SET

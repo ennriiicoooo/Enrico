@@ -1,27 +1,26 @@
-<?php
-include('config.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>Sign Up Form</title>
+  <title>Login Form</title>
 </head>
 <style>
   body{
-    background: url(images/haha.gif);
+    background: url(images/ha.gif);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    
   }
   .card{
-    background-color: rgba(84, 196, 230, 0.5);
+    background-color: rgba(135, 1, 1, 0.3);
     color: white;
-    border: 2px solid rgb(84, 196, 230);
+    border: 2px solid rgb(135, 1, 1);
   }
   h3{
-    color: rgb(1, 51, 67);
+    color: rgb(228, 1, 1);
   }
   .form-control{
     color:  #FDF7E4;
@@ -34,18 +33,11 @@ include('config.php');?>
       <div class="col-md-6">
         <div class="card">
           <div class="card-header">
-            <h3>Sign Up</h3>
+            <h3>Login</h3>
+            
           </div>
           <div class="card-body">
-            <form action="signin.php" method="post" class="form-login">
-              <div class="mb-3">
-                <label for="fullname" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullname" name="fullname" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
+          <form action="auth.php" method="post" class="form-login">
               <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -54,11 +46,11 @@ include('config.php');?>
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
               </div>
-              <button name="submit" type="submit" class="btn btn-primary" style="background: rgb(1, 101, 135); border: none;" >Sign Up</button>
+              <button name="submit" type="submit" class="btn btn-primary"style="background: rgb(135, 1, 1); border: none;">Login</button>
             </form>
           </div>
           <div class="card-footer">
-            <p class="text-center">Already have an account? <a href="index.php" style="color:rgb(1, 101, 135);">Login</a></p>
+            <p class="text-center">Don't have an account? <a href="signup.php"style="color: rgb(228, 1, 1);">Sign Up</a></p>
           </div>
         </div>
       </div>

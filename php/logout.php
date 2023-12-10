@@ -7,7 +7,7 @@ if(session_destroy())
 
         <script>
             alert("Successfully Logout!");
-            window.location.href='home.php';
+            window.location.href='index.php';
         </script>
 
         <?php

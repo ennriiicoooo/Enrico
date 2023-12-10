@@ -4,7 +4,7 @@ session_start();
 include('config.php');
 
 
-if(isset($_POST['submit'])){
+if(isset($_POST['submitt'])){
 
     $myusername = $_POST['username'];
     $mypassword = $_POST['password'];
@@ -13,10 +13,10 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($result);
     $row = mysqli_fetch_array($result);
-    $status = $row['active'];
+    
 
-
-    if($status == 1){
+    if($count > 0){
+        if($row['active'] == 1){
 
         $_SESSION['username'] = $myusername;
         ?>
@@ -27,26 +27,48 @@ if(isset($_POST['submit'])){
         </script>
 
         <?php
+        }else{
+            ?>
 
+        <script>
+            alert("Your account is currently Deactivated");
+            window.location.href='index.php';
+        </script>
 
-        
-
+        <?php
+        }
     }
 else {
         ?>
-
+    
         <script>
-            alert("Your username or password are incorrect");
+            alert("Your Username or Password is incorrect");
             window.location.href='index.php';
         </script>
 
         <?php
 
-      
+        
 
-}
-}
 
+
+        if(!$result) {die('Unsuccessfull added'. mysql_error()); } 
+
+    
+    }
+} else {
+
+    ?>
+
+    <script>
+    alert("Your username and password is empty");
+    </script>
+
+    <?php
+
+    if(!$result) {die('Unsuccessfull added'. mysql_error()); } 
+
+    header("location:login.php");
+}
 
 mysqli_close($conn);
-?>
